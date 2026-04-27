@@ -1,0 +1,160 @@
+/* ============================================
+   style.css  –  My Favorite Hobby (Photography)
+   CSS Selectors used:
+     - Element selector      : body, h1, h2, p, ul, li, img, footer
+     - Class selector        : .card, .highlight, .hobby-img, .hobby-list, .ext-link, .subtitle
+     - ID selector           : #header, #gallery-section, #resources
+     - Group selector        : h1, h2
+     - Pseudo-class          : a:hover, li:hover
+   ============================================ */
+
+/* ---------- Element selectors ---------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 17px;
+  line-height: 1.75;
+  background-color: #f4f0eb;
+  color: #2c2c2c;
+}
+
+/* Group selector – h1 and h2 together */
+h1, h2 {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: #4a3728;
+  border-bottom: 2px solid #c8a87a;
+  padding-bottom: 6px;
+  margin-bottom: 14px;
+}
+
+p {
+  margin: 0 0 12px 0;
+}
+
+ul {
+  padding-left: 22px;
+}
+
+li {
+  margin-bottom: 6px;
+  transition: color 0.2s;
+}
+
+/* Pseudo-class – li on hover */
+li:hover {
+  color: #b5541c;
+  cursor: default;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+  color: #888;
+  border-top: 1px solid #d9cfc4;
+  margin-top: 40px;
+}
+
+/* ---------- ID selectors ---------- */
+#header {
+  background: linear-gradient(135deg, #3b2314 0%, #7a4a2a 60%, #c8875a 100%);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px 50px;
+}
+
+#header h1 {
+  font-size: 2.6rem;
+  margin: 0 0 12px;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+#gallery-section {
+  background-color: #fff8f0;
+  border-left: 5px solid #c8875a;
+}
+
+#resources {
+  background-color: #eef6f0;
+  border-left: 5px solid #5a9e6f;
+}
+
+/* ---------- Class selectors ---------- */
+.subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin: 0;
+  font-style: italic;
+}
+
+.card {
+  background-color: #ffffff;
+  margin: 24px auto;
+  max-width: 760px;
+  padding: 28px 32px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.highlight {
+  background-color: #fde68a;
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-weight: bold;
+  color: #7c4d00;
+}
+
+.hobby-img {
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  border: 4px solid #c8a87a;
+  margin: 16px 0;
+}
+
+.hobby-list {
+  list-style: none;
+  padding: 0;
+}
+
+.hobby-list li {
+  padding: 8px 12px;
+  background: #fdf6ee;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.ext-link {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 10px 22px;
+  background-color: #5a9e6f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  transition: background-color 0.25s, letter-spacing 0.2s;
+}
+
+/* Pseudo-class – link hover */
+.ext-link:hover {
+  background-color: #3d7a52;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
